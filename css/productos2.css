@@ -1,0 +1,68 @@
+
+.productos{
+    position: relative;
+    top: 3.5rem;
+    display: grid;
+    grid-gap:2rem;
+    grid-template-columns: 1fr;
+    padding: 4rem;
+ }
+ .titulo-prod{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(52, 57, 148);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+ }
+ .titulo-card{
+    font-size: 2rem;
+ }
+ .link-card{
+    text-decoration: none;
+    color: rgb(52, 111, 148);
+    font-size: 1rem;
+    transition: all .5s ease-in;
+ }
+ .link-card:hover{
+    color: #e21111ec;;
+    transform: scale(1.1);
+ }
+ .card-1, .card-2, .card-3,.card-4, .card-5, .card-6{
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,.5fr));
+ }
+ .tarjeta{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:1rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-gap: .5rem;
+    text-align: center;
+    color: rgb(110, 108, 230);
+    transition: all .5s ease-in;
+ }
+ .tarjeta:hover{
+    transform: scale(1.05);
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+ }
+ .prod-img{
+    width: 100%;
+    border-radius: 2rem;
+ }
+ .prod-titulo{
+    font-size: 30px;
+ }
+ .prod-precio{
+    font-size: 20px;
+ }
+ .prod-enlace{
+    text-decoration: none;
+    color: #e21111ec;
+    font-size: 1rem;
+    font-weight: bold;
+ }
+ 

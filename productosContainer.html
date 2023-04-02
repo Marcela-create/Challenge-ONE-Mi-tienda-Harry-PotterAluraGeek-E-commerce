@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="footer-home.css">
+    <link rel="stylesheet" href="nuevo-usuario-nuevo-producto.css">
+    <link rel="stylesheet" href="table.css">
+    <title>Nuevo ususrio</title>
+</head>
+       
+            <header>
+                <div class="caja">
+                 <h1><img src="img/alurageekconHarry.jpg" class="logo" width="100" height="120" alt="Logo de la Tienda Harry Potter"></h1>
+                  <nav>
+                      
+                      <div class = "header__search">
+                        <input class = "header__search-input"
+                               id = "search__items"
+                               placeholder = " Qué desea buscar ?"
+                               type = "text">
+                        <button class = "header__search-button"><img alt = ""
+                                                                     class = "header__search-icon"
+                                                                     src = "search.svg"></button>
+                    </div>
+                    <script src="search.js"></script>
+        <a class = "header__login-button" href = "adminProducts.html">
+            Menú Administrador
+        </a>
+        </header>
+ <body>
+     <div id="productos-container">
+
+
+
+
+
+     </div>
+     <script src="productosContainer.js"></script>
+    </body>
+   <footer>
+    <section class = "contacto__container">
+        <div class = "contacto__logo">
+            <a href = "#">
+                <img alt = "logo" class = "contacto__logoFooter" src = "img/alurageek.jpg" width="340" height="140">
+            </a>
+        </div>
+        <div class = "contacto__info">
+            <ul>
+                <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html" >★ Quienes somos</a></li>
+                <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Política de privacidad</a>
+                </li>
+                <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Programa de fidelidad</a>
+                </li>
+                <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Nuestras Tiendas</a></li>
+                <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Quiero ser franquiciado</a>
+                </li>
+                <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Anúncie aquí</a></li>
+            </ul>
+        </div>
+        <form class = "contacto__contactar" id = "form__data">
+            <h2 class = "contacto__contactar-title">Hable con nosotros</h2>
+
+            <label class = "contacto__contactar-nombre contacto__textBox">
+                Nombre
+                <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = ""
+                       required type = "text">
+            </label>
+
+            <label class = "contacto__mensaje contacto__textBox">
+                Escribe tu mensaje
+                <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required></textarea>
+            </label>
+
+            <input class = "contacto__button" id = "contact__boton" type = "submit" value = "Enviar mensaje">
+        </form>
+    </section>
+
+          <script src ="validation.js"></script>
+          <script src="productos.js"></script>
+  </footer>
+</html>

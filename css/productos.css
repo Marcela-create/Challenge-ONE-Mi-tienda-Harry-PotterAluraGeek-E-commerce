@@ -1,0 +1,42 @@
+/* los rectangulos con los precios*/
+.productos li{
+    display: inline-block;
+     text-align: center;
+     width: 20%;
+     vertical-align: top;
+     /*background: #CCCCCC; sólo era para poder delinear sabiendo como era el fondo de cada uno*/
+     margin: 0 1.5%;
+     padding: 30px 20px;
+     box-sizing: border-box;
+     /*border-color:#000000;
+     border-width: 2px;
+     border-style: solid;*/
+     border: 2px solid #000000;
+     border-radius: 10px;
+}
+.productos li:hover{
+   border-color: #c68c19;
+
+}
+.productos li:hover h3{
+   font-size: 33px;
+}
+.productos{
+   width: 100%;
+   margin: 0 auto;
+   padding: 50px;
+}
+.productos h3{
+   font-size: 30px;
+   font-weight: bold;
+}
+.producto-descripcion{
+     font-size: 18px;
+}
+.producto-precio{
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+

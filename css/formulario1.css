@@ -1,0 +1,7 @@
+ #image .diagon{ 
+  
+    background-image: url("/img/diagon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height:calc(100vh - 72px); 
+}

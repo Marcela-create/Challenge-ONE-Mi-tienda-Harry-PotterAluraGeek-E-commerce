@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/footer-home.css">
+    <link rel="stylesheet" href="/css/resset.css">
+    <title>Nuevo usuario</title>
+</head>
+       
+            <header>
+                <div class="caja">
+                    <h1><img src="/img/alurageekconHarry.jpg" class="logo" width="100" height="120" alt="Logo de la Tienda Harry Potter"></h1>
+                     <nav>
+                         
+                         <div class = "header__search">
+                           <input class = "header__search-input"
+                                  id = "search__items"
+                                  placeholder = " Qué desea buscar ?"
+                                  type = "text">
+                           <button class = "header__search-button"><img alt = ""
+                                                                        class = "header__search-icon"
+                                                                        src = "search.svg"></button>
+                       </div>
+                       <script src="/js/search.js"></script>
+          
+                       <a class = "header__login-button" href = "/screen/adminProducts.html">
+                        Menú Administrador
+                    </a>
+                
+        </header>
+         <main>
+            <section class = "new__product">
+                <form class = "form_container" data-form>
+                     <h2 class = "new__product-title">Agregar nuevo producto</h2>
+                     <input class = " new__product-input" data-url placeholder = "url imagen" required type = "text">
+                     <input class = " new__product-input" data-nombre placeholder = "Nombre del producto" required type = "text">
+                     <input class = " new__product-input" data-precio placeholder = "Precio producto" required type = "text">
+                     <select class = "form-selection" data-categoria multiple required>
+                          <option disabled selected value = ""> Selecciona la seccion</option>
+                           <option data-Varitas value = "varitas">Varitas</option>
+                           <option data-Tazas value = "tazas">Tazas</option>
+                           <option data-Bufandas value = "bufandas"> Bufandas</option>
+                           <option data-Gorros value = "gorros"> Gorros</option>
+                           <option data-Buzos value= "buzos">Buzos</option>
+                           <option data-Soportes value = "soportes"> Soportes de varitas</option>
+                     </select>
+                       <textarea class = " new__product-input form-description" data-descripcion placeholder = "Descripcion del producto"
+                       required></textarea>
+                        <button class = "new__product-button" data-formBtn>Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+           
+                <section class = "contacto__container">
+                    <div class = "contacto__logo">
+                        <a href = "#">
+                            <img alt = "logo" class = "contacto__logoFooter" src = "img/alurageek.jpg" width="340" height="140">
+                        </a>
+                    </div>
+                    <div class = "contacto__info">
+                        <ul>
+                            <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html" >★ Quienes somos</a></li>
+                            <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Política de privacidad</a>
+                            </li>
+                            <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Programa de fidelidad</a>
+                            </li>
+                            <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Nuestras Tiendas</a></li>
+                            <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Quiero ser franquiciado</a>
+                            </li>
+                            <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Anúncie aquí</a></li>
+                        </ul>
+                    </div>
+                    <form class = "contacto__contactar" id = "form__data">
+                        <h2 class = "contacto__contactar-title">Hable con nosotros</h2>
+               
+                        <label class = "contacto__contactar-nombre contacto__textBox">
+                            Nombre
+                            <input class = "contacto__contactar-nombreInput" id = "contact__nombre" name = "nombre" placeholder = ""
+                                   required type = "text">
+                        </label>
+               
+                        <label class = "contacto__mensaje contacto__textBox">
+                            Escribe tu mensaje
+                            <textarea class = "contacto__mensaje-text" id = "contact__mensaje" required></textarea>
+                        </label>
+               
+                        <input class = "contacto__button" id = "contact__boton" type = "submit" value = "Enviar mensaje">
+                    </form>
+                </section>
+                <script src = "/js/crearProductoController.js" type = "module"></script>
+                      <script src ="/js/validation.js"></script>
+                      <script src="/js/productos.js"></script>
+    </footer>
+</html>

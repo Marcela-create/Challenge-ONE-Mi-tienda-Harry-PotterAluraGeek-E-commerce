@@ -1,0 +1,120 @@
+.boton {
+    border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #2e518b; /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    margin-right: 2px;
+    position: absolute;
+    }
+    .btn, .input-icon :hover{
+        transform: scale(1.2);
+        background: #1b3256 ;
+    }
+    .buscar{
+        width: 340px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 10px;
+        color: #000000;
+    }
+  .unico{
+    display: inline;
+    margin: 5px 0 0 0;
+    flex-direction: row;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 15px;    
+}
+.unico .canasta:hover{
+    transform: scale(1.2);
+    border-color :black;
+    border-style: double;
+}
+.canasta{
+    border-radius: 10px;
+}
+
+ .unico:hover{
+    color: #c78c19;
+    text-decoration: underline;
+    border-radius: 10px; 
+}
+  
+      .input-icon {
+        background: #ffffff;
+        border-radius: 10px ;
+        border-style: ridge;
+        color:#2e518b;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+.banner__imagen{
+    background: url('img/tienda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:calc(100vh - 72px);
+}
+.banner__titulo{
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+    font-size: 5.0625rem;
+    font-weight: 400;
+    position: absolute;
+    left: 60%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.descripcion{
+    color: #fdfdfd;
+    font-family: Pacifico, cursive;
+   font-size: 2rem;
+   background-color: darkgrey;
+    position: absolute;
+    left: 55%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+   
+}
+
+
+@media screen and (min-width:0){
+    .banner__imagen{
+        height: calc(100vh - 51px);
+    }
+    .sobre{
+        padding: 2.5rem 1rem;
+    }
+    .banner__titulo{
+        font-size:3rem ;
+  }
+}
+
+@media screen and (min-width:768px){
+    .banner__imagen{
+        height: calc(100vh - 72px);
+    }
+    .sobre{
+        padding: 2.5rem;
+     }
+     .banner__titulo{
+        font-size: 5rem;
+    }
+}
+ 

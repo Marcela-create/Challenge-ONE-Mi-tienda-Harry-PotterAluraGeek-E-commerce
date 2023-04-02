@@ -1,0 +1,6 @@
+.contenidoPrincipal-cursos{
+    flex-direction:column;
+}
+.contenidoPrincipal-cursos-link{
+     width: 100%;
+}
