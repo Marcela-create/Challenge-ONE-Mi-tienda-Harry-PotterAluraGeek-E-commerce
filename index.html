@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,93 +14,87 @@
     <link rel="stylesheet" href="css/footerPrueba.css">
     <link rel="stylesheet" href="css/navHeaderPrueba.css">
     <link rel="stylesheet" href="css/header.css">
+    <script src="js/menu.js"></script>
     <title>Tienda Harry Potter</title>
-</head>
-<header class="header container">
-    
-  <div class="caja"> 
-              
-      <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
-      
-      <div class = "header__search" id = "search__container">
-          <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
-          <button class = "header__search-button" id = "search__action">
-              <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
-        </div>
-  
-   <nav class="menu">
-      
-     <ul class="menu__list" id="menu">      
-     
-    <l1 class="menu__item">
-      
-      <a class="menu__item__link" href="productos.html"> Productos </a>
-    </l1>
-    <l1 class="menu__item">
-       <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
-    <l1 class="menu__item" ><a class="menu__item__link" href="formulario.html" >Login</a></l1>
-  </ul>
-  <button class="menu__open"><i class="uil uil-bars"></i></button>
-  <button class="menu__close"><i class="uil uil-multiply"></i></button>
-</nav>
-</header>
-    <body>
-    <section class="banner" >
-        <img class="banner__imagen" src="img/tienda.jpg" alt="banner" >
-        <h2 class="banner__titulo">Mi tienda Harry Potter</h2>
-        <p class="descripcion">productos seleccionados con 33% de descuento</p>
- </section>
- <section class="sobre">
-       <h1 class="sobre__titulo">Varitas</h1>
- </section>
+ </head>
+  <header class="header container">   
+      <div class="caja">         
+          <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
+          
+          <nav class="menu"> 
            
-    <main>
-            <ul class="productos">
-                <li id="var1">                           
-                    <img src="img/varitaHarry.jpg" height="400px"  alt="harry">
-                    <p class="producto-descripcion">Paquete colección Harry</p>
-                    <p class="producto-precio" >$ 15.00</p>                 
-                       <div class="body">                    
-                            <button id="open">
+              <ul class="menu__list" id="menu">        
+                  <l1 class="menu__item">
+                      <a class="menu__item__link" href="productos.html"> Productos </a>
+                  </l1>
+                  <l1 class="menu__item">
+                     <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
+                  <l1 class="menu__item" ><a class="menu__item__link" href="formulario.html" >Login</a></l1>
+               </ul>
+                    <button class="menu__open"><i class="uil uil-bars"></i></button>
+                    <button class="menu__close"><i class="uil uil-multiply"></i></button>
+                    <div class = "header__search" id = "search__container">
+                      <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
+                       <button class = "header__search-button" id = "search__action">
+                       <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+                   </div> 
+           </nav>
+   </header>
+   <body>
+       <section class="banner" >
+          <img class="banner__imagen" src="img/tienda.jpg" alt="banner" >
+           <h2 class="banner__titulo">Mi tienda Harry Potter</h2>
+            <p class="descripcion">productos seleccionados con 33% de descuento</p>
+        </section>
+        <section class="sobre">
+               <h1 class="sobre__titulo">Varitas</h1>
+        </section>
+        <main>
+           <ul class="productos">
+              <li id="var1">                           
+                  <img src="img/varitaHarry.jpg" height="400px"  alt="harry" class="imgprod">
+                  <p class="producto-descripcion">Paquete colección Harry</p>
+                  <p class="producto-precio" >$ 15.00</p>                 
+                  <div class="body">                    
+                      <button id="open">
                               Haz click
-                            </button>
-                           <div class="modal-container" id="modal_container">
-                              <div class="modal">
-                                 <h1> VARITA HARRY POTTER</h1>
-                                  <img class="item" src="img/soprteGriffindor.jpg"   alt="mini">
+                      </button>
+                        <div class="modal-container" id="modal_container">
+                           <div class="modal">
+                                <h1> VARITA HARRY POTTER</h1>
+                                 <img class="item" src="img/soprteGriffindor.jpg"   alt="mini">
                                   <p>
-                                  Colección, trae soporte para varita ,motivos y casas a elección
+                                     Colección, trae soporte para varita ,motivos y casas a elección
                                   </p>
                                   <button id="close">Cerrar</button>
-                              
-                               </div>                      
-                           </div>
-                       </div>           
+                           </div>                      
+                        </div>
+                  </div>           
                        <script src="js/pop.js"></script>   
-                </li>
-                <li id="var2">
-                    <img src="img/varitaDraco.jpg"  height="400px" alt="Draco">
+              </li>
+              <li id="var2">
+                    <img src="img/varitaDraco.jpg"  height="400px" alt="Draco" class="imgprod">
                     <p class="producto-descripcion">Paquete colección Draco</p>
                     <p class="producto-precio" >$ 15.00</p>
-                    <div class="body">                    
+                   <div class="body">                    
                         <button id="open1">
                           Haz click
                         </button>
-                       <div class="modal-container" id="modal_container1">
-                          <div class="modal">
+                      <div class="modal-container" id="modal_container1">
+                         <div class="modal">
                              <h1> VARITA DRACO</h1>
                               <img class="item" src="img/soporte2.jpg"   alt="mini">
                               <p>
-                              Colección, trae soporte para varita ,motivos y casas a elección
+                                 Colección, trae soporte para varita ,motivos y casas a elección
                               </p>
                               <button id="close1">Cerrar</button>
-                           </div>                      
-                       </div>
-                   </div>           
-                   <script src="js/pop1.js"></script>  
-                </li>
-                <li id="var3">                  
-                    <img src="img/varitaHermione.jpg" height="400px"  alt="Hermione">
+                         </div>                      
+                      </div>
+                  </div>           
+                     <script src="js/pop1.js"></script>  
+             </li>
+              <li id="var3">                  
+                    <img src="img/varitaHermione.jpg" height="400px"  alt="Hermione" class="imgprod">
                     <p class="producto-descripcion">Paquete colección Hermione</p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -119,9 +113,9 @@
                        </div>
                    </div>           
                    <script src="js/pop2.js"></script>  
-                </li>
+              </li>
                 <li>
-                    <img src="img/varitadumbledore.jpg"  height="400px" alt="Dumbledore">
+                    <img src="img/varitadumbledore.jpg"  height="400px" alt="Dumbledore" class="imgprod">
                     <p class="producto-descripcion">Paquete colección Dumbledore</p>
                     <p class="producto-precio" >$ 15.00</p>  
                     <div class="body">                    
@@ -142,10 +136,10 @@
                    <script src="js/pop3.js"></script>   
                 </li>
                 
-             </ul>
+            </ul>
              <ul class="productos">
                 <li id="casaGryffindor">
-                    <img src="img/casaGryffindor.jpg"  height="400px" width="250px" alt="Gryffindor">
+                    <img src="img/casaGryffindor.jpg"  height="240px" width="160px" alt="Gryffindor" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Gryffindor fundada por Godric Gryffindor son los valientes</p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -163,7 +157,7 @@
                                 Colores: Escarlata y oro.              
                                 Miembros más famosos: Harry Potter, Ron Weasley, Hermione Granger, Albus Dumbledore.
                                 ¿Te sentís identificado?,Ve a Login para ver los productos de esta casa
-                            </p>
+                              </p>
                               <button id="close4">Cerrar</button>
                            </div>                      
                        </div>
@@ -171,7 +165,7 @@
                    <script src="js/pop4.js"></script>   
                 </li>   
                 <li>
-                    <img src="img/casaHuflepuff.jpg"  height="400px" width="250px"alt="Huflepuff">
+                    <img src="img/casaHuflepuff.jpg"  height="240px" width="160px"alt="Huflepuff" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Huflepuff fundada por Helga Hufflepuff son leales y trabajadores</p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -197,7 +191,7 @@
                     
                 </li>
                 <li>          
-                    <img src="img/casaRavenclaw.jpg" height="400px" width="250px" alt="Revenclaw">
+                    <img src="img/casaRavenclaw.jpg" height="240px" width="160px" alt="Revenclaw" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Revenclaw fundada por Rowena Ravenclaw son los intelectuales </p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -225,7 +219,7 @@
                 </li>
                 <li>
                   
-                    <img src="img/casaSlytherin.jpg"  height="400px"width="250px" alt="Slytherin">
+                    <img src="img/casaSlytherin.jpg"  height="240px" width="160px" alt="Slytherin" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Slytherin fundada por Salazar Slytherin son astutos</p>
                     <p class="producto-precio" >$ 15.00</p>  
                     <div class="body">                    
@@ -252,18 +246,17 @@
                    <script src="js/pop7.js"></script>    
                 </li>
                   
-             </ul>
-         </main>    
-</body>
-        <footer>
-          
-            <section class = "contacto__container" id="contacto">
-                <div class = "contacto__logo">
+            </ul>
+        </main>    
+  </body>
+      <footer>  
+          <section class = "contacto__container" id="contacto">
+              <div class = "contacto__logo">
                     <a href = "#">
                         <img alt = "logo" class = "contacto__logoFooter" src = "img/alurageek.jpg" width="340" height="140">
                     </a>
-                </div>
-                <div class = "contacto__info">
+               </div>
+               <div class = "contacto__info">
                     <ul>
                         <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html" >★ Quienes somos</a></li>
                         <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Política de privacidad</a>
@@ -276,7 +269,7 @@
                         <li class = "contacto__info-li"><a class = "contacto__info-text" href = "EnPreparacion.html">★ Anúncie aquí</a></li>
                     </ul>
                 </div>
-                <form action="https://formsubmit.co/34ba55c4-5f44-4920-82c9-a089801264fb method="POST">
+                <form action="https://formspree.io/f/marceladeneco@gmail.com" method="POST">
                              
           
                   <fieldset>
@@ -301,17 +294,17 @@
                       <button  type="submit"class="btn btn__form">Enviar Mensaje</button>
                     </div>     
                      
-                 </fieldset>
+                  </fieldset>
                  
-              </form>
+                </form>
              
-         </section>
+          </section>
 
           <section class="footer__copy">
-             <h1 class="footer__copy__text">&copy; Copyright-derechos reservados -2023 -Developed by Marcela Maidana</h1>
+              <h1 class="footer__copy__text">&copy; Copyright-derechos reservados -2023 -Developed by Marcela Maidana</h1>
           </section>
       </footer>
-            <
+            
             <!-- CONTROLLERS -->
             <script type="module" src="js/controller2.js"></script>
              <!-- VALIDACIONES Y ESTILADO CON JS -->
@@ -322,6 +315,6 @@
               <script src="js/productosLista.js"></script>
               <script src ="js/validation.js"></script>
               <script src="js/productos.js"></script>
-  </footer>
+     </footer>
 
 </html>

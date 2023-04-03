@@ -1,6 +1,144 @@
-.contenidoPrincipal-cursos{
-    flex-direction:column;
-}
-.contenidoPrincipal-cursos-link{
-     width: 100%;
-}
+.recetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .receta {
+    max-width: 200px; /* Establece una anchura máxima para el contenedor */
+    width: 100%; /* Ajusta la anchura automáticamente */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+  }
+  
+  .receta__imagen {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .receta__contenido {
+    padding: 10px;
+  }
+  
+  .receta__titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .receta__descripcion {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .receta__boton {
+    background-color: #c68c19;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .contenidoPrincipal-cursos{
+     flex-direction:column;
+    }
+    .contenidoPrincipal-cursos-link{
+    width: 100%;
+    }
+/* los rectangulos con los precios*/
+.productos li{
+     display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    /*background: #CCCCCC; sólo era para poder delinear sabiendo como era el fondo de cada uno*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /*border-color:#000000;
+         border-width: 2px;
+         border-style: solid;*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+    }
+    .productos li:hover{
+    border-color: #c68c19;
+    
+    }
+    .productos li:hover h3{
+    font-size: 33px;
+    }
+    .productos{
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+     grid-gap: 10px;
+    }
+     .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 4rem;
+    margin-right: 4rem;
+ }
+    
+.imgprod{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    }
+    
+    .productos h3{
+    font-size: 30px;
+    font-weight: bold;
+    }
+    .producto-descripcion{
+    font-size: 18px;
+    }
+    .producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    }
+    
+
+  @media screen and (min-width: 768px) {
+    /* A partir de 768px de ancho, muestra 2 elementos por fila */
+    .receta {
+      max-width: calc(50% - 20px);
+      margin-right: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .receta:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    /* A partir de 1200px de ancho, muestra 3 elementos por fila */
+    .receta {
+      max-width: calc(33.333% - 20px);
+      margin-right: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .receta:nth-child(3n+1) {
+      margin-right: 0;
+    }
+    
+    .receta:last-child,
+    .receta:last-child:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  

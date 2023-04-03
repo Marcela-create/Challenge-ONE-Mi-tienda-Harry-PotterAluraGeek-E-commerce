@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-    <link rel="icon" type="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/productos.css">
-    <link rel="stylesheet" href="css/footer-home.css">
-    <link rel="stylesheet" href="css/footerPrueba.css">
-    <link rel="stylesheet" href="css/navHeaderPrueba.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/tabladinamica.css">
-    <link rel="stylesheet" href="css/nuevo-producto.css">
-    <link rel="stylesheet" href="css/admProductos.css">
-    <title>Nuevos productos</title>
-</head>
-<header class="header container">
-    
-  <div class="caja"> 
+      <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+      <link rel="icon" type="icon" href="img/favicon.ico">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/banner.css">
+      <link rel="stylesheet" href="css/productos.css">
+      <link rel="stylesheet" href="css/footer-home.css">
+      <link rel="stylesheet" href="css/footerPrueba.css">
+      <link rel="stylesheet" href="css/navHeaderPrueba.css">
+      <link rel="stylesheet" href="css/header.css">
+      <link rel="stylesheet" href="css/tabladinamica.css">
+      <link rel="stylesheet" href="css/nuevo-producto.css">
+      <link rel="stylesheet" href="css/admProductos.css">
+      <script src="js/menu.js"></script>
+      <title>Nuevos productos</title>
+   </head>
+         <header class="header container">
+               <div class="caja"> 
               
-      <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
+                  <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
       
-      <div class = "header__search" id = "search__container">
-          <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
-          <button class = "header__search-button" id = "search__action">
-              <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
-        </div>
-  
-   <nav class="menu">
-      
-     <ul class="menu__list" id="menu">      
-     
-    <l1 class="menu__item">
-      
-      <a class="menu__item__link" href="productos.html"> Productos </a>
-    </l1>
-    <l1 class="menu__item">
-       <a class="menu__item__link" href="index.html"> Cerrar sesión </a></l1>
-    <l1 class="menu__item" ><a class="menu__item__link"  href = "adminProducts.html">
-        Menú Administrador
-    </a></l1>
-  </ul>
-  <button class="menu__open"><i class="uil uil-bars"></i></button>
-  <button class="menu__close"><i class="uil uil-multiply"></i></button>
-</nav>
-</header>
-<body>
-    <main>
-        <section class = "products admin-products">
-            <div class = "product__container">
-                <div class = "product__header">
-                    <h2 class = "product__title">Todos los productos</h2>
-                    <a href = "new-product.html" id="Nuevo">
-                        <button class = "agregar-producto" id="Nuevo"><a href="NuevosProductos.html" id="Nuevo"> agregar producto</button></a>
-                    </a>
+                   <div class = "header__search" id = "search__container">
+                      <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
+                      <button class = "header__search-button" id = "search__action">
+                       <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+                  </div>
                 </div>
-                <section class = "products">
-                    <div class = "product__container">
-                        <div class = "product__list" data-adminProducts></div>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </main>
-
-   </body>
+                 <nav class="menu">
+      
+                      <ul class="menu__list" id="menu">      
+     
+                         <l1 class="menu__item">
+      
+                             <a class="menu__item__link" href="productos.html"> Productos </a>
+                         </l1>
+                          <l1 class="menu__item">
+                            <a class="menu__item__link" href="index.html"> Cerrar sesión </a></l1>
+                            <l1 class="menu__item" ><a class="menu__item__link"  href = "adminProducts.html">
+                                                  Menú Administrador
+                            </a></l1>
+                     </ul>
+                          <button class="menu__open"><i class="uil uil-bars"></i></button>
+                          <button class="menu__close"><i class="uil uil-multiply"></i></button>
+                 </nav>
+          </header>
+  <body>
+      <main>
+          <section class = "products admin-products">
+               <div class = "product__container">
+                   <div class = "product__header">
+                       <h2 class = "product__title">Todos los productos</h2>
+                        <a href = "new-product.html" id="Nuevo">
+                           <button class = "agregar-producto" id="Nuevo"><a href="NuevosProductos.html" id="Nuevo"> agregar producto</button></a>
+                       </a>
+                   </div>
+                   <section class = "products">
+                       <div class = "product__container">
+                           <div class = "product__list" data-adminProducts></div>
+                      </div>
+                  </section>
+              </div>
+           </section>
+      </main>
+  </body>
    <footer>
-    <section class = "contacto__container">
-        <div class = "contacto__logo">
-            <a href = "#">
-                <img alt = "logo" class = "contacto__logoFooter" src = "img/alurageek.jpg" width="340" height="140">
-            </a>
-        </div>
+      <section class = "contacto__container">
+          <div class = "contacto__logo">
+               <a href = "#">
+                 <img alt = "logo" class = "contacto__logoFooter" src = "img/alurageek.jpg" width="340" height="140">
+               </a>
+          </div>
         <section class="footer__copy">
-       <h1 class="footer__copy__text">&copy; Copyright-derechos reservados -2023 -Developed by Marcela Maidana</h1>
-    </section>
-</footer>
-      <
-      <!-- CONTROLLERS -->
-      <script type="module" src="js/controller2.js"></script>
+             <h1 class="footer__copy__text">&copy; Copyright-derechos reservados -2023 -Developed by Marcela Maidana</h1>
+       </section>
+  </footer>
+       
+       <!-- CONTROLLERS -->
+       <script type="module" src="js/controller2.js"></script>
        <!-- VALIDACIONES Y ESTILADO CON JS -->
        <script src="js/agregarNuevosProductos.js"></script>
         <script type="module" src="js/validaciónapp.js"></script>
@@ -92,6 +91,6 @@
         <script src="js/productosLista.js"></script>
         <script src ="js/validation.js"></script>
         <script src="js/productos.js"></script>
-</footer>
+  </footer>
 
 </html>

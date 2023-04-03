@@ -1,5 +1,4 @@
-.diagon__img { 
-    
+.diagon__img {   
     background-image: url("/img/diagon.jpg");
     background-repeat: no-repeat;
     background-size: cover;  
@@ -19,7 +18,7 @@
 .login__container {
     align-items: center;
     justify-content: center;
-    height: 56vh;
+    height: 75vh;
 }
 .formulario{
     background: #b1acac;

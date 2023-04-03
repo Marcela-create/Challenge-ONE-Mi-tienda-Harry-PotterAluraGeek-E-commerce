@@ -6,17 +6,21 @@ header {
 }
 
 .caja{
-    width: 940px;
+    width: 100%;
     position: relative;
     margin: 0 auto;
 }
 
 nav{
-    position: absolute;
-    top:50px;
+    position: relative;
+    top:-50px;
     right: 0;
 }
-
+.nav{
+    display: flex;
+justify-content: flex-end;
+align-items: center;
+}
 nav li{
     display: inline;
     margin: 0 0 0 5px;
@@ -104,3 +108,73 @@ button{
 .item:hover{
   transform: scale(1.2);
 }
+
+ /* muestra el menú de navegación cuando se hace clic en el botón de menú */
+button.menu + ul.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #BBBBBB;
+    padding: 20px;
+  }
+   
+  /* muestra el botón de menú en dispositivos móviles */
+  button.menu {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+  }
+  
+  /* muestra el menú de navegación cuando se hace clic en el botón de menú */
+  button.menu + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #BBBBBB;
+    padding: 20px;
+  }
+  
+  /* muestra cada elemento de navegación en una nueva línea */
+  button.menu + ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  
+  /* oculta el botón de menú en dispositivos más grandes */
+  @media screen and (min-width: 768px) {
+    button.menu {
+      display: none;
+    }
+    
+    /* muestra el menú de navegación en dispositivos más grandes */
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    
+    /* establece la posición y los estilos del menú de navegación */
+    nav {
+      position: static;
+    }
+    
+    nav ul {
+      background: none;
+      padding: 0;
+    }
+    
+    nav li {
+      margin: 0 10px;
+    }
+  }
+  
+
+
+
