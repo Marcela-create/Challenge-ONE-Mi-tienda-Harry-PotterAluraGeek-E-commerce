@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-      <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-      <link rel="icon" type="icon" href="img/favicon.ico">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/footer-home.css">
-      <link rel="stylesheet" href="css/footerPrueba.css">
-      <link rel="stylesheet" href="css/navHeaderPrueba.css">
-      <link rel="stylesheet" href="css/header.css">
-      <link rel="stylesheet" href="css/formulario.css">
-      <link rel="stylesheet" href="css/formulario1.css">
-      <script src="js/menu.js"></script>
-       <title>formulario</title>
-   </head>
-   <header class="header container">  
-       <div class="caja">          
-           <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>  
-           <div class = "header__search" id = "search__container">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/footer-home.css">
+    <link rel="stylesheet" href="css/footerPrueba.css">
+    <link rel="stylesheet" href="css/navHeaderPrueba.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/btn__busqueda.css">
+    <link rel="stylesheet" href="css/footer__formulario.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/formulario1.css">
+    <title>Tienda Harry Potter</title>
+ </head>
+  <header >   
+      <div class="caja">         
+          <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
+          
+          <nav class="menu">    
+            <div class = "header__search" id = "search__container">
               <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
                <button class = "header__search-button" id = "search__action">
-              <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
-           </div>
-  
-           <nav class="menu">  
-              <ul class="menu__list">      
-                 <l1 class="menu__item">
-                     <a class="menu__item__link" href="productos.html"> Productos </a>
-                 </l1>
-                 <l1 class="menu__item">
-                       <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
-                  <l1 class="menu__item" ><a class="menu__item__link" href="index.html" >Cerrar sesión</a></l1>
-                  <l1 class="menu__item" ><a class="menu__item__link" href="NuevosProductos.html" >Nuevos productos</a></l1>
-              </ul>
-              <button class="menu__open"><i class="uil uil-bars"></i></button>
-              <button class="menu__close"><i class="uil uil-multiply"></i></button>
-          </nav>
-  </header>
-        <br><br>
-   <body id="image" class="diagon__img">    
+               <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+           </div> 
+           <ul class="menu__list" id="menu">        
+            <l1 class="menu__item">
+                <a class="menu__item__link" href="productos.html"> Productos </a>
+            </l1>
+            <l1 class="menu__item">
+               <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
+            <l1 class="menu__item" ><a class="menu__item__link" href="index.html" >Cerrar Sesión</a></l1>
+         </ul>
+              
+   </nav>
+   </header>
+   <body >    
       <section class="formulario">
-          <main>
+          <main id="id="image" class="diagon__img"" class="diagon__img">
               <div class = "login__container">
-                  <form class = "login__form" data-form id = "login__form">       
-                    <h2 class = "login__title">Iniciar Sección</h2> 
-               <div>
-                    </label><input type="email" name="email"class = "login__email" data-email id = "login__email" placeholder="Email" required>
-                    <label class="input-label" for="email"></label >                   
-                    <span class="login__message-error"></span>
-              </div>
-              <div>
-                  <input autocomplete = "none" class = "login__password" data-password id = "login__password" placeholder = "Escriba su contraseña" type = "password">
-                    <p class = "login__message-error">requerido</p>
-              </div>
+                  <form class = "login__form" data-form id = "login__form"> 
+                    <img src="img/Sin título.png" alt="">      
+                     
+                    <div class="input-container">
+                        <input type="text"  name="name"  id="nombre"  placeholder="nombre" class="input"  data-tipo="nombre"required />
+                         <label class="input-label" for="nombre" >Nombre:</label >                         
+                          <span class="input-message-error"></span>
+                    </div>
+                     <div class="input-container">
+                      <input type="email" name="email" id="nombre"class="input" placeholder="Email" required>
+                      <label class="input-label" for="email" >Email:</label >                   
+                          <span class="input-message-error"></span>
+                  </div>
              </form> 
                 <a href = "productos.html">
                     <input class = "login__button registrar" id = "login__registrar" type = "submit" value = "Entrar">
@@ -63,11 +65,12 @@
                  </a>                   
                   <a href = "new-usuario.html">
                     <input class = "login__button registrar" id = "login__registrar" type = "submit" value = "Registrar">
-                  </a>
+                 
+                </a>
              </div>
          </main>
       </section>
-             <script src="login.js"></script>
+             <script src="js/login.js"></script>
    </body>  
      <footer>
          <section class = "contacto__container" id="contacto">

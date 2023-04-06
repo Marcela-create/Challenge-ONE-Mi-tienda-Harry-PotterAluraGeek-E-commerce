@@ -1,78 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-       <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-       <link rel="icon" type="icon" href="img/favicon.ico">
-       <link rel="stylesheet" href="css/style.css">
-       <link rel="stylesheet" href="css/banner.css">
-       <link rel="stylesheet" href="css/productos.css">
-       <link rel="stylesheet" href="css/footer-home.css">
-       <link rel="stylesheet" href="css/footerPrueba.css">
-       <link rel="stylesheet" href="css/navHeaderPrueba.css">
-       <link rel="stylesheet" href="css/header.css">
-       <link rel="stylesheet" href="css/tabladinamica.css">
-       <script src="js/menu.js"></script>
-        <title>Tienda Harry Potter</title>
-  </head>
-   <header class="header container">  
-      <div class="caja">           
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link rel="icon" type="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/footer-home.css">
+    <link rel="stylesheet" href="css/footerPrueba.css">
+    <link rel="stylesheet" href="css/navHeaderPrueba.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/btn__busqueda.css">
+    <link rel="stylesheet" href="css/footer__formulario.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/formulario1.css">
+    <link rel="stylesheet" href="css/registrado.css">
+    <title>Tienda Harry Potter</title>
+ </head>
+  <header >   
+      <div class="caja">         
           <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
-          <div class = "header__search" id = "search__container">
+          
+          <nav class="menu">    
+            <div class = "header__search" id = "search__container">
               <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
                <button class = "header__search-button" id = "search__action">
-              <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
-           </div>
-           <nav class="menu">  
-                <ul class="menu__list" id="menu">      
-     
-                    <l1 class="menu__item">
-      
-                      <a class="menu__item__link" href="productos.html"> Productos </a>
-                  </l1>
-                   <l1 class="menu__item">
-                         <a class="menu__item__link" href="#contacto__info"> Contacto </a></l1>
-                  <l1 class="menu__item" ><a class="menu__item__link" href="index.html" >Cerrar sección</a></l1>
-              </ul>
-               <button class="menu__open"><i class="uil uil-bars"></i></button>
-               <button class="menu__close"><i class="uil uil-multiply"></i></button>
-         </nav>
-    </header>
-   <body>
-        <main>
-            <div class="sociales">
-               <article>
-                    <div class="cont_dinamica">
-                        <form action="">
-                            <h2>Nuevo usuario</h2>
-                            <input type="text" name="nombre" id="nombre" placeholder="nombre">
-                            <input type="text" name="apellido" id="apellido" placeholder="apellido">
-                           <input type="tel" neme="cel" id="cel" placeholder="celular">
-                           <input type="email" name="email" id="email" placeholder="email">
-                           <div class="botonera">
-                              <button id="btnagregar">agregar</button>
-                              <button id="borrar_ultimo" >borrar</button>
-                              <button id="borrar_tabla" >borrar tabla</button>
-                              <button id="cargarx3" >cargarx3</button>
-                          </div>
-                     </form>
-                     <br>
-                       <table id="mytabla">
-                           <thead>
-                               <th>nombre</th>
-                               <th>apellido</th>
-                               <th>celular</th>
-                               <th>email</th>      
-                         </thead>    
-                       </table>
-                 </div>   
-            </article>
-                  <script src="js/tabladinamica.js"></script>
-     </main>
-  </body>
+               <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+           </div> 
+           <ul class="menu__list" id="menu">        
+            <l1 class="menu__item">
+                <a class="menu__item__link" href="productos.html"> Productos </a>
+            </l1>
+            <l1 class="menu__item">
+               <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
+            <l1 class="menu__item" ><a class="menu__item__link" href="index.html" >Cerrar Sesión</a></l1>
+         </ul>
+              
+   </nav>
+   </header>
+    <body>
+        <main class="container flex flex--column flex--center">
+          <div class="cadastro-cabecalho">
+            <img
+              src="img/alurageekconHarry.jpg" width="100" height="150"
+              alt="Logo Doguito"
+              class="registry-header__logo"
+            />
+            <h1 class="registry-header__title">My tienda Harry Potter</h1>
+          </div>
+          <section class="registry-card cartao">
+            <span class="registry-card__icon-complete"></span>
+            <h1 class="registry-card__title card__title">¡Registro completado!</h1>
+            <a href="productos.html" class="login__button">Acceder</a>
+          </section>
+        </main>
+      </body>
       <footer>
             <section class = "contacto__container">
                 <div class = "contacto__logo">

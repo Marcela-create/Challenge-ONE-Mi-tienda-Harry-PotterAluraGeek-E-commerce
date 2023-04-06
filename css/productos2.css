@@ -1,12 +1,13 @@
 
 .productos{
-    position: relative;
-    top: 3.5rem;
-    display: grid;
-    grid-gap:2rem;
-    grid-template-columns: 1fr;
-    padding: 4rem;
- }
+   position: relative;
+   top: 3.5rem;
+   display: grid;
+   grid-gap:2rem;
+   grid-template-columns: 1fr;
+   padding: 4rem;
+}
+
  .titulo-prod{
     display: flex;
     justify-content: space-between;
@@ -40,7 +41,7 @@
     padding:1rem;
     border-radius: 2rem;
     display: grid;
-    grid-gap: .5rem;
+    grid-gap: 0.5rem;
     text-align: center;
     color: rgb(110, 108, 230);
     transition: all .5s ease-in;
@@ -65,4 +66,33 @@
     font-size: 1rem;
     font-weight: bold;
  }
- 
+ .link-card{
+   background-color:  #2A7AE4;
+   color: #FFFFFF;
+   width: 400px;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 3px 3px 0px rgba(36, 57, 85, 0.11);
+   border: none;
+   cursor: pointer;
+   font-size: 25px;
+   text-decoration-line: none;
+ }
+ .titulo-card{
+   background-color:  #eceef1;
+   color: #101010;
+   width: 400px;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 0px 3px 3px 0px rgba(36, 57, 85, 0.11);
+   border: none;
+   cursor: pointer;
+   font-size: 25px;
+   text-decoration-line: none;
+   transition: all .5s ease-in;
+ }
+ .titulo-card:hover{
+   transform: scale(1.05);
+   background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+   color: #FFFFFF;
+}

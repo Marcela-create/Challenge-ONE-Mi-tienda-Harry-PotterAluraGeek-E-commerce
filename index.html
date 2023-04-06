@@ -13,45 +13,46 @@
     <link rel="stylesheet" href="css/footer-home.css">
     <link rel="stylesheet" href="css/footerPrueba.css">
     <link rel="stylesheet" href="css/navHeaderPrueba.css">
-    <link rel="stylesheet" href="css/header.css">
-    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/btn__busqueda.css">
+    <link rel="stylesheet" href="css/footer__formulario.css">
+   
     <title>Tienda Harry Potter</title>
  </head>
-  <header class="header container">   
+  <header >   
       <div class="caja">         
           <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
           
-          <nav class="menu"> 
-           
-              <ul class="menu__list" id="menu">        
-                  <l1 class="menu__item">
-                      <a class="menu__item__link" href="productos.html"> Productos </a>
-                  </l1>
-                  <l1 class="menu__item">
-                     <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
-                  <l1 class="menu__item" ><a class="menu__item__link" href="formulario.html" >Login</a></l1>
-               </ul>
-                    <button class="menu__open"><i class="uil uil-bars"></i></button>
-                    <button class="menu__close"><i class="uil uil-multiply"></i></button>
-                    <div class = "header__search" id = "search__container">
-                      <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
-                       <button class = "header__search-button" id = "search__action">
-                       <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
-                   </div> 
-           </nav>
+          <nav class="menu">    
+            <div class = "header__search" id = "search__container">
+              <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
+               <button class = "header__search-button" id = "search__action">
+               <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+           </div> 
+           <ul class="menu__list" id="menu">        
+            <l1 class="menu__item">
+                <a class="menu__item__link" href="formulario.html">  Registrarse para ver Productos </a>
+            </l1>
+            <l1 class="menu__item">
+               <a class="menu__item__link" href="#contacto"> Contacto </a></l1>
+            <l1 class="menu__item" ><a class="menu__item__link" href="formulario.html" >Login</a></l1>
+         </ul>
+              
+   </nav>
    </header>
    <body>
        <section class="banner" >
           <img class="banner__imagen" src="img/tienda.jpg" alt="banner" >
-           <h2 class="banner__titulo">Mi tienda Harry Potter</h2>
-            <p class="descripcion">productos seleccionados con 33% de descuento</p>
+           <h2 class="banner__titulo">Mi tienda Harry Potter</h2> <br>
+           <p class="descripcion">productos seleccionados con 33% de descuento</p>
         </section>
         <section class="sobre">
-               <h1 class="sobre__titulo">Varitas</h1>
+               <h2 class="sobre__titulo" id="sobre__titulo">Varitas</h2>
         </section>
-        <main>
+        <main class="cuatro__columnas">
            <ul class="productos">
-              <li id="var1">                           
+              <li id="var1"> 
+                <br><br>                          
                   <img src="img/varitaHarry.jpg" height="400px"  alt="harry" class="imgprod">
                   <p class="producto-descripcion">Paquete colección Harry</p>
                   <p class="producto-precio" >$ 15.00</p>                 
@@ -63,16 +64,20 @@
                            <div class="modal">
                                 <h1> VARITA HARRY POTTER</h1>
                                  <img class="item" src="img/soprteGriffindor.jpg"   alt="mini">
+                                 <br><br>
+                              <button id="close">Cerrar</button>
+                              <br><br>
                                   <p>
                                      Colección, trae soporte para varita ,motivos y casas a elección
                                   </p>
-                                  <button id="close">Cerrar</button>
+                                 
                            </div>                      
                         </div>
                   </div>           
                        <script src="js/pop.js"></script>   
               </li>
               <li id="var2">
+                <br><br>
                     <img src="img/varitaDraco.jpg"  height="400px" alt="Draco" class="imgprod">
                     <p class="producto-descripcion">Paquete colección Draco</p>
                     <p class="producto-precio" >$ 15.00</p>
@@ -84,16 +89,20 @@
                          <div class="modal">
                              <h1> VARITA DRACO</h1>
                               <img class="item" src="img/soporte2.jpg"   alt="mini">
+                              <br><br>
+                              <button id="close1">Cerrar</button>
+                              <br><br>
                               <p>
                                  Colección, trae soporte para varita ,motivos y casas a elección
                               </p>
-                              <button id="close1">Cerrar</button>
+                              
                          </div>                      
                       </div>
                   </div>           
                      <script src="js/pop1.js"></script>  
              </li>
-              <li id="var3">                  
+              <li id="var3"> 
+                              
                     <img src="img/varitaHermione.jpg" height="400px"  alt="Hermione" class="imgprod">
                     <p class="producto-descripcion">Paquete colección Hermione</p>
                     <p class="producto-precio" >$ 15.00</p>
@@ -105,16 +114,22 @@
                           <div class="modal">
                              <h1> VARITA HERMIONE</h1>
                               <img class="item" src="img/soporteSlyterin.jpg"   alt="mini">
+                              <br><br>
+                              <button id="close2">Cerrar</button>
+                              <br><br>
                               <p>
                               Colección, trae soporte para varita,motivos y casas a elección
                               </p>
-                              <button id="close2">Cerrar</button>
+                              
                            </div>                      
                        </div>
                    </div>           
                    <script src="js/pop2.js"></script>  
               </li>
-                <li>
+            
+            
+                 
+                <li id="var4">
                     <img src="img/varitadumbledore.jpg"  height="400px" alt="Dumbledore" class="imgprod">
                     <p class="producto-descripcion">Paquete colección Dumbledore</p>
                     <p class="producto-precio" >$ 15.00</p>  
@@ -126,20 +141,27 @@
                           <div class="modal">
                              <h1> VARITA DUMBLEDORE</h1>
                               <img class="item" src="img/soporteRavenclaw.jpg"   alt="mini">
+                              <br><br>
+                              <button id="close3">Cerrar</button>
+                              <br><br>
                               <p>
                               Colección, trae soporte para varita,motivos y casas a elección
                               </p>
-                              <button id="close3">Cerrar</button>
+                             
                            </div>                      
                        </div>
                    </div>           
                    <script src="js/pop3.js"></script>   
                 </li>
-                
+              </main> 
             </ul>
+            <section class="sobre">
+              <h2 class="sobre__titulo" id="sobre__titulo">Casas Hogwarts</h2>
+       </section>
              <ul class="productos">
-                <li id="casaGryffindor">
-                    <img src="img/casaGryffindor.jpg"  height="240px" width="160px" alt="Gryffindor" class="imgprod">
+                <li id="casaGryffindor" class="var5">  
+                  
+                    <img src="img/casaGryffindor.jpg"  height="300px" width="160px" alt="Gryffindor" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Gryffindor fundada por Godric Gryffindor son los valientes</p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -150,7 +172,10 @@
                           <div class="modal">
                              <h1> CASA GRYFFINDOR</h1>
                              ¿qué personalidad se asocia a cada Casa de Hogwarts? Nos adentramos en la relación personalidad-Sombrero Seleccionador:
-                              <img class="item" src="img/gorro2.jpg"   alt="mini">
+                              <img class="item" src="img/gorro2.jpg"    alt="mini">
+                              <br><br>
+                              <button id="close4">Cerrar</button>
+                              <br><br>
                               <p>
                                 Los Gryffindors son descritos como valientes y atrevidos pero también muy imprudentes. Las investigaciones psicológicas demuestran que estos atributos están relacionados con varios rasgos de personalidad: extraversión, positividad, apertura a la experiencia y creatividad.
                                 La Casa de Gryffindor valora el coraje por encima de todo, pero también la osadía, el temple y la caballerosidad.  
@@ -158,14 +183,16 @@
                                 Miembros más famosos: Harry Potter, Ron Weasley, Hermione Granger, Albus Dumbledore.
                                 ¿Te sentís identificado?,Ve a Login para ver los productos de esta casa
                               </p>
-                              <button id="close4">Cerrar</button>
-                           </div>                      
+                             
+                           </div> 
+                                            
                        </div>
+                       
                    </div>           
                    <script src="js/pop4.js"></script>   
                 </li>   
-                <li>
-                    <img src="img/casaHuflepuff.jpg"  height="240px" width="160px"alt="Huflepuff" class="imgprod">
+                <li id="var5">
+                    <img src="img/casaHuflepuff.jpg"  height="300px" width="160px"alt="Huflepuff" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Huflepuff fundada por Helga Hufflepuff son leales y trabajadores</p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -176,22 +203,29 @@
                           <div class="modal">
                              <h1> CASA HUFLEPUFF</h1>
                              ¿qué personalidad se asocia a cada Casa de Hogwarts? Nos adentramos en la relación personalidad-Sombrero Seleccionador:
-                              <img class="item" src="img/gorro2.jpg"   alt="mini">
+                              <img class="item" src="img/gorro2.jpg"    alt="mini">
+                              <br><br>
+                              <button id="close5">Cerrar</button>
+                              <br><br>
                               <p>
                                 Los Hufflepuffs son descritos como leales, justos, trabajadores , agradables, sin prejuicios y se relacionan con los conceptos de justicia y amabilidad en la psicología de la personalidad, optimistas, trabajadores, eficientes y organizados.
                                 Colores: Amarillo y negro.
                                  Miembros más famosos: Newt Scamander, Cedric Diggory, Nymphadora Tonks, profesora Pomona Sporut.
                                 ¿Te sentís identificado?,Ve a Login para ver los productos de esta casa
                             </p>
-                              <button id="close5">Cerrar</button>
+                          
                            </div>                      
                        </div>
                    </div>           
                    <script src="js/pop5.js"></script>   
                     
                 </li>
-                <li>          
-                    <img src="img/casaRavenclaw.jpg" height="240px" width="160px" alt="Revenclaw" class="imgprod">
+              </ul>
+            </main>
+            <main class="cuatro__columnas">
+              <ul class="productos">    
+                <li id="var6">          
+                    <img src="img/casaRavenclaw.jpg" height="300px" width="160px" alt="Revenclaw" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Revenclaw fundada por Rowena Ravenclaw son los intelectuales </p>
                     <p class="producto-precio" >$ 15.00</p>
                     <div class="body">                    
@@ -202,7 +236,10 @@
                           <div class="modal">
                              <h1>CASA RAVENCLAW</h1>
                              ¿qué personalidad se asocia a cada Casa de Hogwarts? Nos adentramos en la relación personalidad-Sombrero Seleccionador:
-                              <img class="item" src="img/gorro2.jpg"   alt="mini">
+                              <img class="item" src="img/gorro2.jpg"     alt="mini">
+                              <br><br>
+                              <button id="close6">Cerrar</button>
+                              <br><br>
                               <p>
                                 La Casa Ravenclaw valora el aprendizaje, la sabiduría, el ingenio, y el intelecto como elementos importantes para formar parte de su casa. 
                                 Al ser magos de mucho talento, Hermione Granger estuvo a punto de ser seleccionada por Ravenclaw.los estudiantes clasificados en esta casa suelen ser personas deseosas de debatir, resolver problemas y discutir diferentes ideas.
@@ -210,16 +247,16 @@
                                 Miembros más famosos: Luna Lovegood, Cho Chang.
                                 ¿Te sentís identificado?,Ve a Login para ver los productos de esta casa
                             </p>
-                              <button id="close6">Cerrar</button>
+                           
                            </div>                      
                        </div>
                    </div>           
                    <script src="js/pop6.js"></script>   
     
                 </li>
-                <li>
+                <li id="var7">
                   
-                    <img src="img/casaSlytherin.jpg"  height="240px" width="160px" alt="Slytherin" class="imgprod">
+                    <img src="img/casaSlytherin.jpg"  height="300px" width="160px" alt="Slytherin" class="imgprod">
                     <p class="producto-descripcion">articulos de la casa Slytherin fundada por Salazar Slytherin son astutos</p>
                     <p class="producto-precio" >$ 15.00</p>  
                     <div class="body">                    
@@ -230,7 +267,10 @@
                           <div class="modal">
                              <h1>CASA SLYTHERIN</h1>
                              ¿qué personalidad se asocia a cada Casa de Hogwarts? Nos adentramos en la relación personalidad-Sombrero Seleccionador:
-                              <img class="item" src="img/gorro2.jpg"   alt="mini">
+                              <img class="item" src="img/gorro2.jpg"    alt="mini">
+                              <br><br>
+                              <button id="close7">Cerrar</button>
+                              <br><br>
                               <p>
                                 los Slytherin. Suelen ser retratados como los malos. Son astutos, inteligentes, ambiciosos, que tienden a ser líderes fuertes, y harían cualquier cosa para conseguir sus propios objetivos. 
                                 Las personas asociadas a este tipo de personalidad tendrían una puntuación alta en lo que se conoce como Triada Oscura (suena a ciencia ficción), un concepto psicológico que se relaciona con tres rasgos de personalidad: Maquiavelismo, narcisismo y psicopatía. La base de los tres rasgos de la Tríada Oscura es la tendencia a la dominación en la sociedad y al propio progreso.
@@ -239,7 +279,7 @@
                                 Miembros más famosos: Voldemort, Draco Malfoy.
                                 ¿Te sentís identificado?,Ve a Login para ver los productos de esta casa
                               </p>
-                              <button id="close7">Cerrar</button>
+                              
                            </div>                      
                        </div>
                    </div>           
@@ -305,16 +345,6 @@
           </section>
       </footer>
             
-            <!-- CONTROLLERS -->
-            <script type="module" src="js/controller2.js"></script>
-             <!-- VALIDACIONES Y ESTILADO CON JS -->
-              <script type="module" src="js/validaciónapp.js"></script>
-              <script src="js/validacionesUno.js"></script>
-              <script src="js/productos-servicios.js"></script>
-              <script src="js/product-servicio.js"></script>
-              <script src="js/productosLista.js"></script>
-              <script src ="js/validation.js"></script>
-              <script src="js/productos.js"></script>
-     </footer>
+           
 
 </html>

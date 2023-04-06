@@ -21,29 +21,21 @@
         border-radius: 10px;
         color: #000000;
     }
-  .unico{
-    display: inline;
-    margin: 5px 0 0 0;
-    flex-direction: row;
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: bold;
-    font-size: 15px;    
-}
-.unico .canasta:hover{
-    transform: scale(1.2);
-    border-color :black;
-    border-style: double;
-}
-.canasta{
+ .logo{
+    margin-left: 20%;
+ }
+ .header__search-input {
+    width: 340px;
+    height: 40px;
+    font-size: 20px;
     border-radius: 10px;
+    color: #000000;
+}
+.header__search-input{
+    margin-left: 30%;
+    top: -5%;
 }
 
- .unico:hover{
-    color: #c78c19;
-    text-decoration: underline;
-    border-radius: 10px; 
-}
   
       .input-icon {
         background: #ffffff;
@@ -53,7 +45,7 @@
         position: absolute;
         width: 40px;
         height: 40px;
-        left: 10px;
+         right: auto;
         top: 50%;
         transform: translateY(-50%);
       }
@@ -63,7 +55,9 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height:calc(100vh - 72px);
+    height:calc(100vh - 82px);
+   margin: 0;
+   margin-top: -10px;
 }
 .banner__titulo{
     color: #fdfdfd;
@@ -73,7 +67,7 @@
     position: absolute;
     left: 60%;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    top: 80%;
+   margin-top: 20rem;
     text-align: center;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -87,10 +81,9 @@
     position: absolute;
     left: 55%;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    top: 100%;
     text-align: center;
     transform: translate(-50%, -50%);
-   
+    top: 60rem;
 }
 
 
@@ -115,6 +108,5 @@
      }
      .banner__titulo{
         font-size: 5rem;
+     }
     }
-}
- 

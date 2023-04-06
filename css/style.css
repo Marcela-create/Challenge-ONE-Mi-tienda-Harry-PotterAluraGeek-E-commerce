@@ -4,7 +4,9 @@ header {
     box-shadow: inset 0 0 30px #2e518b; 
     margin-top: 0;
 }
-
+body{
+  background-color: rgb(212, 232, 225);
+}
 .caja{
     width: 100%;
     position: relative;
@@ -71,11 +73,11 @@ button{
     opacity: 0;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position:fixed;
     pointer-events: none;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
 }
 .show{
@@ -93,22 +95,38 @@ button{
     
 }
 .modal h1{
+  margin-top: -5px;
     margin: 0;
 }
 .modal p{
-    opacity: 0.7;
-    font-size: 15px;
+    width:100%;
+    height:90% ;
+    font-size: 20px;
+    margin-top: -2px;
 }
 .item{
-    width:100%;
-    height:80% ;
+  width:75%;
+  height:45% ;
     transition:0.5s;
     object-fit: cover;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 .item:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
-
+#sobre__titulo, h2{
+   color: black;
+   font-family: Pacifico, cursive;
+    font-size: 5rem;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    margin-top: 1px;
+}
  /* muestra el menú de navegación cuando se hace clic en el botón de menú */
 button.menu + ul.show {
     display: flex;
@@ -152,14 +170,21 @@ button.menu + ul.show {
     button.menu {
       display: none;
     }
-    
+    .caja{
+      width: auto;
+    }
+  .cuatro__columnas{
+    width: auto;
+  }
     /* muestra el menú de navegación en dispositivos más grandes */
     nav ul {
       display: flex;
       justify-content: flex-end;
       align-items: center;
     }
-    
+    #var1, #var2, #var3{
+                 width: auto;
+    }
     /* establece la posición y los estilos del menú de navegación */
     nav {
       position: static;
