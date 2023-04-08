@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+      <link rel="icon" type="icon" href="img/favicon.ico">
+    <title>Formulario Agregar Productos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="css/footer-home.css">
+    <link rel="stylesheet" href="css/footerPrueba.css">
+    <link rel="stylesheet" href="css/navHeaderPrueba.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tabladinamica.css">
+    <link rel="stylesheet" href="css/nuevo-producto.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/footer__formulario.css">
+    <link rel="stylesheet" href="css/stilos.css" />
+ 
+  </head>
+  <header >   
+    <div class="caja">         
+        <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
+        <br>
+        <nav class="menu">    
+          <div class = "header__search" id = "search__container">
+            <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
+             <button class = "header__search-button" id = "search__action">
+             <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+         </div> 
+         <ul class="menu__list" id="menu">        
+          <l1 class="menu__item">
+              <a class="menu__item__link" href="productos.html"> Productos </a>
+          </l1>
+          <l1 class="menu__item">
+             <a class="menu__item__link" href="index.html"> Cerrar sesión </a></l1>
+          <l1 class="menu__item" ><a class="menu__item__link" href="NuevosProductos.html" >Administración de productos</a></l1>
+       </ul>           
+ </nav>
+ </header>
+  <body>
+    <main>
+      <div class="mainCard">
+        <div class="title"><img src="img/alurageekconHarry.jpg" width="100" height="150" /></div>
+        <div>
+          <form action="">
+            <input
+              type="text"
+              name="task"
+              placeholder="Nombre del producto, precio, categoría"
+              class="inputForm"
+              autocomplete="off"
+              data-form-input
+            />
+            <button type="submit" class="btnCreate" data-form-btn>
+              Agregar <i class="fas fa-plus-circle"></i>
+            </button>
+          </form>
+        </div>
+        <ul class="cardsList" data-list>       
+        </ul>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/delete.js"></script>
+  </body>
+     <!-- FOOTER -->
+     <footer>
+      <section class = "contacto__container">
+        <div class = "contacto__logo">
+            <a href = "#">
+              <img alt = "logo" class = "contacto__logoFooter" src = "img/alurageek.jpg" width="340" height="140">
+           </a>
+        </div>
+      <section class="footer__copy">
+           <h1 class="footer__copy__text">&copy; Copyright-derechos reservados -2023 -Developed by Marcela Maidana</h1>
+      </section>
+    </footer>
+    
+</html>

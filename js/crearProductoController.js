@@ -16,10 +16,10 @@ form.addEventListener('submit', (evento) => {
     productosServicios.crearProducto(url, nombre, precio, selectedCategory, descripcion).then(respuesta => {
         alert('El PRODUCTO FUE CREADO CON EXITO')
 
-        window.location.href = '../screens/adminProducts'
+        window.location.href = '../index.html'
 
         console.log(respuesta)
-    }).catch(err => {
-        console.log(err)
+    }).catch(error => {
+        console.log(error)
     });
 })

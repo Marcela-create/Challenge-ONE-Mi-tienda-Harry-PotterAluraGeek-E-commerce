@@ -1,21 +1,38 @@
-.admin-products {
-    background-color:  #E5E5E5;
-}
-#nuevo{
-   text-decoration-color: white;
+.product__container {
+    
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 25px;
    
-   text-decoration-line: none;
-  }
+}
+main{
+    background-image: linear-gradient(
+    109.6deg,
+    rgb(144, 195, 205) 11.2%,
+    rgb(39, 105, 108) 100.2%,
+    rgb(1, 17, 18) 100.2%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.agregar-producto {
+}
+#agregproduct{
+    color: #FFFFFF;
+    text-decoration-line: none;
+   }
+
+.agregar-producto{
     padding: 16px;
     background-color: #2A7AE4;
-    color: #FFFFFF;
+    text-decoration: none;
     border: none;
     margin-top: 0.3rem;
     cursor: pointer;
     font-size: 18px;
-    text-decoration: none;
+    color: #FFFFFF;
+    
 }
 
 .agregar-producto:hover {

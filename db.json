@@ -57,6 +57,7 @@
             "titulo":"Varita Harry Potter",
             "imagen": "img/varitaHarry.jpg",
             "precio":"$15.00"
+            
         },
         {
             "id":"1",
@@ -81,20 +82,21 @@
         }
         
     ],
-    "casa_Gryffindor ": [
+    "casaGryffindor ": [
         {
             "id":"casaGryffindor",
             "titulo":"Casa Gryffindor",
             "imagen": "img/casaGryffindor.jpg",
-            "precio":"$15.00",
-            "taza":{
+            "precio":"$15.00"
+        },
+           { "taza":"id2",
                 "id":"2",
                 "name":"taza1",
                 "titulo":"Taza Gryffindor",
                "imagen": "img/tazaGryffindor.jpg",
                 "precio":"$15.00"
         },
-          "bufandas":{
+          {"bufandas":"id3",
             
                 "id":"3",
                 "name":"bufanda1",
@@ -102,21 +104,22 @@
                 "imagen": "img/bufandaGryffindor.jpg",
                 "precio":"$15.00"
             },
-            "buzos":{
-            
+            {"buzos":"id4",
                 "id":"4",
                 "name":"buzo1",
                 "titulo":"Buzo Gryffindor",
                 "imagen": "img/buzosGryffindor.jpg",
                 "precio":"$15.00"
-            },"gorros":{
+            },
+            {"gorros":"id5",
             
-                "id":"5",
+               "id":"5",
                 "name":"gorro1",
                 "titulo":"Gorro Gryffindor",
                 "imagen": "img/gorrosGryffindor.jpg",
                 "precio":"$15.00"
-            },"soportes":{
+            },
+            {"soportes":"id6",
             
                 "id":"6",
                 "name":"soporte1",
@@ -124,23 +127,22 @@
                 "imagen": "img/soporteVarita2.jpg",
                 "precio":"$15.00"
             }
-
-        }
     ],
-    "casa_Hufflepuff ": [
+    "casaHufflepuff ": [
         {
             "id":"casaHufflepuff",
             "titulo":"Casa Hufflepuff",
             "imagen": "img/casaHuflepuff.jpg",
-            "precio":"$15.00",
-            "tazas":{
+            "precio":"$15.00"
+        },
+            {"tazas":"id2",
                 "id":"2",
                 "name":"taza2",
             "titulo":"Taza Hufflepuff",
             "imagen": "img/tazaHufflepuff.jpg",
             "precio":"$15.00"
         },
-          "bufandas":{
+          {"bufandas":"id3",
             
                 "id":"3",
                 "name":"bufanda2",
@@ -148,21 +150,23 @@
                 "imagen": "img/bufandahufflepuf.jpg",
                 "precio":"$15.00"
             },
-            "buzos":{
+            {"buzos":"id4",
             
                 "id":"4",
                 "name":"buzo2",
                 "titulo":"Buzo Hufflepuff",
                 "imagen": "img/buzosHufflepuff.jpg",
                 "precio":"$15.00"
-            },"gorros":{
+            },
+            {"gorros":"id5",
             
                 "id":"5",
                 "name":"gorro2",
                 "titulo":"Gorro Hufflepuff",
                 "imagen": "img/gorrosHufflepuff.jpg",
                 "precio":"$15.00"
-            },"soportes":{
+            },
+            {"soportes":"id6",
             
                 "id":"6",
                 "name":"soporte2",
@@ -170,24 +174,22 @@
                 "imagen": "img/soporteVarita4.jpg",
                 "precio":"$15.00"
             }
-
-
-        }
     ],
-    "casa_Ravenclaw ": [
+    "casaRavenclaw ": [
         {
             "id":"casaRavenclaw",
             "titulo":"Casa Ravenclaw",
             "imagen": "img/casaRavenclaw.jpg",
-            "precio":"$15.00",
-            "tazas":{
+            "precio":"$15.00"
+        },
+            {"tazas":"id2",
                 "id":"2",
                 "name":"taza3",
               "titulo":"Taza Ravenclaw",
                "imagen": "img/tazaRavenclaw.jpg",
               "precio":"$15.00"
         },
-          "bufandas":{
+          {"bufandas":"id3",
             
                 "id":"3",
                 "name":"bufanda3",
@@ -195,21 +197,23 @@
                 "imagen": "img/bufandaRavenclaw.jpg",
                 "precio":"$15.00"
             },
-            "buzos":{
+            {"buzos":"id4",
             
                 "id":"4",
                 "name":"buzo3",
                 "titulo":"Buzo Ravenclaw",
                 "imagen": "img/buzosRavenclaw.jpg",
                 "precio":"$15.00"
-            },"gorros":{
+            },
+            {"gorros":"id5",
             
                 "id":"5",
                 "name":"gorro3",
                 "titulo":"Gorro Ravenclaw",
                 "imagen": "img/gorrosRavenclaw.jpg",
                 "precio":"$15.00"
-            },"soportes":{
+            },
+            {"soportes":"id6",
             
                 "id":"6",
                 "name":"soporte3",
@@ -218,21 +222,21 @@
                 "precio":"$15.00"
             }
 
-        }
-    ],"casa_Slytherin ": [
+    ],"casaSlytherin ": [
         {
             "id":"casaSlytherin",
             "titulo":"Casa Slytherin",
             "imagen": "img/casaSlytherin.jpg",
-            "precio":"$15.00",
-            "tazas":{
+            "precio":"$15.00"
+        },
+            {"tazas":"id2",
                 "id":"2",
                 "name":"taza4",
             "titulo":"Taza Slytherin",
             "imagen": "img/tazaSlytherin.jpg",
             "precio":"$15.00"
         },
-          "bufandas":{
+         {"bufandas":"id3",
             
                 "id":"3",
                 "name":"bufanda4",
@@ -240,21 +244,23 @@
                 "imagen": "img/bufandaSlytherin.jpg",
                 "precio":"$15.00"
             },
-            "buzos":{
+            {"buzos":"id4",
             
                 "id":"4",
                 "name":"buzo4",
                 "titulo":"Buzo Slytherin",
                 "imagen": "img/buzosSlytherin.jpg",
                 "precio":"$15.00"
-            },"gorros":{
+            },
+            {"gorros":"id5",
             
                 "id":"5",
                 "name":"gorro4",
                 "titulo":"Gorro Slytherin",
                 "imagen": "img/gorrosSlytherin.jpg",
                 "precio":"$15.00"
-            },"soportes":{
+            },
+            {"soportes":"id6",
             
                 "id":"6",
                 "name":"soporte4",
@@ -262,7 +268,6 @@
                 "imagen": "img/soporteVarita1.jpg",
                 "precio":"$15.00"
             }
-        }
     ],
     "Soportes-extras":[
              {           

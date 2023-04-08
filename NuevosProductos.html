@@ -16,35 +16,32 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/tabladinamica.css">
     <link rel="stylesheet" href="css/nuevo-producto.css">
-    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="css/footer__formulario.css">
+  
     <title>Nuevos productos</title>
  </head>
-   <header class="header container">
-    
-        <div class="caja"> 
-              
-            <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
+ <header >   
+  <div class="caja">         
+      <h1><img src="img/alurageekconHarry.jpg" class="logo" width="150" height="170" alt="Logo de la Tienda Harry Potter"></h1>
       
-           <div class = "header__search" id = "search__container">
-               <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
-               <button class = "header__search-button" id = "search__action">
-              <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
-           </div>
-           <nav class="menu">
-              <ul class="menu__list" id="menu">      
-                  <l1 class="menu__item">
-                      <a class="menu__item__link" href="productos.html"> Productos </a>
-                  </l1>
-                  <l1 class="menu__item">
-                    <a class="menu__item__link" href="index.html">Cerrar sesión  </a></l1>
-                 <l1 class="menu__item" ><a class="menu__item__link"  href = "adminProducts.html">
-                     Menú Administrador
-                 </a></l1>
-              </ul>
-                <button class="menu__open"><i class="uil uil-bars"></i></button>
-                <button class="menu__close"><i class="uil uil-multiply"></i></button>
-           </nav>
-    </header>
+      <nav class="menu">    
+        <div class = "header__search" id = "search__container">
+          <input class = "header__search-input" id = "search__items" placeholder = " Qué desea buscar ?"type = "text">
+           <button class = "header__search-button" id = "search__action">
+           <img alt = ""class = "header__search-icon"src = "img/search.svg"></button>
+       </div> 
+       <ul class="menu__list" id="menu">        
+        <l1 class="menu__item">
+            <a class="menu__item__link" href="productos.html"> Productos </a>
+        </l1>
+        <l1 class="menu__item">
+           <a class="menu__item__link" href="adminProducts.html"> Menú administrador</a></l1>
+        <l1 class="menu__item" ><a class="menu__item__link" href="index.html" >Cerrar sesión</a></l1>
+     </ul>
+          
+</nav>
+</header>
     <main>
           <!-- FORMULARIO PARA AGREGAR PRODUCTO -->
         <section class="agregar-producto container">
@@ -86,8 +83,8 @@
                      <span class="textarea-message-error"></span>
                  </div>
               </fieldset>
-                <button  type="submit"  class="btn btn__agregar">
-                   Agregar Producto
+                <button  type="submit"  class="btn btn__agregar"> <a href="formulario-agregaProductos.html" id="agrega">
+                   Agregar Producto</a>
                  </button>
              </form>
          </section>
@@ -116,6 +113,7 @@
         <script src="js/productosLista.js"></script>
         <script src ="js/validation.js"></script>
         <script src="js/productos.js"></script>
+        <script src="js/"></script>
    </footer>
 
 </html>

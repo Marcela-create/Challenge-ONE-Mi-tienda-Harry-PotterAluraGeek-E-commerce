@@ -1,4 +1,10 @@
-
+#fondo{
+   background-image: url(../img/fondociervo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height:calc(100vh - 72px); 
+    margin-bottom: 0;
+}
 .productos{
    position: relative;
    top: 3.5rem;
@@ -78,7 +84,7 @@
    font-size: 25px;
    text-decoration-line: none;
  }
- .titulo-card{
+ .titulo-card {
    background-color:  #eceef1;
    color: #101010;
    width: 400px;
@@ -90,9 +96,23 @@
    font-size: 25px;
    text-decoration-line: none;
    transition: all .5s ease-in;
+   visibility: visible;
  }
+
+ 
  .titulo-card:hover{
    transform: scale(1.05);
    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
-   color: #FFFFFF;
+   color:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    
+ }
+.titulo-card::after{
+   content: "Ir a 'Ver todo'=>"; 
+   visibility: visible;
+   color: aliceblue;
+}
+.titulo-card::before{
+   content: "=>"; 
+   visibility: hidden;
+   color: aliceblue;
 }

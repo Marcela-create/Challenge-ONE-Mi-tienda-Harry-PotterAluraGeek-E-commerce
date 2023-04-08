@@ -2,7 +2,8 @@ header{
     background-image: url(../img/cabecera.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
-   
+    margin-bottom: 1px;
+    width: 100vw;
 }
 
 .header__container{

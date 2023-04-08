@@ -1,15 +1,28 @@
 // Obtener todos los productos
-const productList = () => fetch('https:// ').then(res => res.json())
+const productList = () => fetch(' http://localhost:3000 ')
+.then(respuesta => respuesta.json())
+.catch(error=>console.log(error))
 
 // Crear un producto
 const createProduct = (imagen, nombre, precio, categoria, descripcion) => {
-  return fetch('https:// ', {
+  return fetch(' http://localhost:3000/casa_Hufflepuff', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json'
     },
+
     body: JSON.stringify({ imagen, nombre, precio, categoria, descripcion, id: uuid.v4() })
+  }).then(respuesta =>{
+    if(respuesta.ok){
+       return respuesta.body
+    }
+
   })
+throw new Error ("No se pudo crear el producto")
+}
+export const productosServivcios={
+    listaProductos,
+    crearProductos,
 }
 
 // Eliminar un producto
