@@ -4,15 +4,20 @@
      text-align: center;
      width: 20%;
      vertical-align: top;
-     /*background: #CCCCCC; sólo era para poder delinear sabiendo como era el fondo de cada uno*/
+     background: #fff;
+     background-color: white; /*sólo era para poder delinear sabiendo como era el fondo de cada uno*/
      margin: 0 1.5%;
      padding: 30px 20px;
      box-sizing: border-box;
-     /*border-color:#000000;
-     border-width: 2px;
-     border-style: solid;*/
      border: 2px solid #000000;
      border-radius: 10px;
+}
+.fondo{
+   background-color: white;
+   background: white;
+}
+.imgprod{
+   border-radius: 10px;
 }
 .productos li:hover{
    border-color: #c68c19;
@@ -28,11 +33,13 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 10px;
+      background-color: white; 
     }
     .productos {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      background-color: white; 
     }
 
 
@@ -67,7 +74,7 @@
     opacity: 1;
 }
 .modal{
-    background-color: #ccc9c9;
+    background-color: white;
     width: 90%;
     height: 90%;
     padding: 100px 90px;
