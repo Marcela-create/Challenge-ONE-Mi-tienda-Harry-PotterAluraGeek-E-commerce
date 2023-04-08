@@ -9,7 +9,7 @@ $seleccionArchivos.addEventListener("change", () => {
   const archivos = $seleccionArchivos.files;
   // Si no hay archivos salimos de la función y quitamos la imagen
   if (!archivos || !archivos.length) {
-    $imagenPrevisualizacion.src = "";
+    $imagenPrevisualizacion.src = "" ;
     return;
   }
   // Ahora tomamos el primer archivo, el cual vamos a previsualizar

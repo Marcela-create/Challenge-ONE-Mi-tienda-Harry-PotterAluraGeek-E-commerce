@@ -24,7 +24,10 @@ agregar-producto {
     align-items: center;
     justify-content: center;
   }
-  
+  #imagenPrevisualizacion{
+     width: 450px;
+     height: 450px;
+  }
   ::-webkit-file-upload-button {
     background: #152d54;;
     border: 1px solid transparent;
