@@ -1,12 +1,12 @@
 {
-  "name": "live-coding-alurageek",
+  "name": "cuentastiendaharrypotter",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Gestión de productos de la Tienda Harry Potter",
+  "main": "script.js",
   "scripts": {
-    "server": "json-server --watch db.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Marcela Maidana",
+  "license": "ISC",
+  "type":"module"
 }

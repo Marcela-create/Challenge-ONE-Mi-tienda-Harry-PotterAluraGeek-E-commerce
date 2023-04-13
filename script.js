@@ -1,3 +1,4 @@
+
 // Obtener referencia al input y a la imagen
 
 const $seleccionArchivos = document.querySelector("#seleccionArchivos"),

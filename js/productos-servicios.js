@@ -1,3 +1,13 @@
+
+export class crearProductoController
+{
+  id;
+  name;
+  titulo;
+  imagen;
+  precio;
+
+}
 //varitas
 const crearListaVaritas = (id,name, titulo, imagen,precio) => {
     const div = document.createElement("div");
@@ -12,17 +22,17 @@ const crearListaVaritas = (id,name, titulo, imagen,precio) => {
     div.innerHTML = contenido;
     return div;
 };
+console.log(tarjeta);
 //tazas
 const crearListaTazas = (id, name, titulo, imagen,precio) => {
   const div = document.createElement("div");
   div.classList.add("tarjeta");
-  const contenido = `
-  <img src="${imagen}" alt="${titulo}" class="prod-img">
-  <p class="prod-name">${name}</p>
-  <h2 class="prod-titulo">${titulo}</h2>
-  <p class="prod-precio">${precio}</p>
-  <a href="#" class="prod-enlace" id="${id}">Ver más</a>
-  `;
+  const contenido =   `<img class="receta__imagen" alt="${titulo}" src="${imagen}" />
+  <div class="receta__contenido">
+      <h4 class="receta__titulo">${titulo}</h4>
+      <p class="receta__descripcion">${precio}</p>
+      <button class="receta__boton" href="EnPreparacion.html" id="${id}">Ver descripción</button>`;                   
+  
   div.innerHTML = contenido;
   return div;
 };
@@ -30,13 +40,11 @@ const crearListaTazas = (id, name, titulo, imagen,precio) => {
 const crearListaBufandas = (id,name, titulo, imagen,precio) => {
   const div = document.createElement("div");
   div.classList.add("tarjeta");
-  const contenido = `
-  <img src="${imagen}" alt="${titulo}" class="prod-img">
-  <p class="prod-name">${name}</p>
-  <h2 class="prod-titulo">${titulo}</h2>
-  <p class="prod-precio">${precio}</p>
-  <a href="#" class="prod-enlace" id="${id}">Ver más</a>
-  `;
+  const contenido =   `<img class="receta__imagen" alt="${titulo}" src="${imagen}" />
+  <div class="receta__contenido">
+      <h4 class="receta__titulo">${titulo}</h4>
+      <p class="receta__descripcion">${precio}</p>
+      <button class="receta__boton" href="EnPreparacion.html" id="${id}">Ver descripción</button>`;
   div.innerHTML = contenido;
   return div;
 };
@@ -44,13 +52,11 @@ const crearListaBufandas = (id,name, titulo, imagen,precio) => {
 const crearListaBuzos = (id,name, titulo, imagen,precio) => {
     const div = document.createElement("div");
     div.classList.add("tarjeta");
-    const contenido = `
-    <img src="${imagen}" alt="${titulo}" class="prod-img">
-    <p class="prod-name">${name}</p>
-    <h2 class="prod-titulo">${titulo}</h2>
-    <p class="prod-precio">${precio}</p>
-    <a href="#" class="prod-enlace" id="${id}">Ver más</a>
-    `;
+    const contenido =   `<img class="receta__imagen" alt="${titulo}" src="${imagen}" />
+    <div class="receta__contenido">
+        <h4 class="receta__titulo">${titulo}</h4>
+        <p class="receta__descripcion">${precio}</p>
+        <button class="receta__boton" href="EnPreparacion.html" id="${id}">Ver descripción</button>`;
     div.innerHTML = contenido;
     return div;
 };
@@ -58,13 +64,11 @@ const crearListaBuzos = (id,name, titulo, imagen,precio) => {
 const crearListaGorros = (id, name, titulo, imagen,precio) => {
   const div = document.createElement("div");
   div.classList.add("tarjeta");
-  const contenido = `
-  <img src="${imagen}" alt="${titulo}" class="prod-img">
-  <p class="prod-name">${name}</p>
-  <h2 class="prod-titulo">${titulo}</h2>
-  <p class="prod-precio">${precio}</p>
-  <a href="#" class="prod-enlace" id="${id}">Ver más</a>
-  `;
+  const contenido =   `<img class="receta__imagen" alt="${titulo}" src="${imagen}" />
+  <div class="receta__contenido">
+      <h4 class="receta__titulo">${titulo}</h4>
+      <p class="receta__descripcion">${precio}</p>
+      <button class="receta__boton" href="EnPreparacion.html" id="${id}">Ver descripción</button>`;
   div.innerHTML = contenido;
   return div;
 };
@@ -72,13 +76,11 @@ const crearListaGorros = (id, name, titulo, imagen,precio) => {
 const crearListaSoportes = (id,name, titulo, imagen,precio) => {
   const div = document.createElement("div");
   div.classList.add("tarjeta");
-  const contenido = `
-  <img src="${imagen}" alt="${titulo}" class="prod-img">
-  <p class="prod-name">${name}</p>
-  <h2 class="prod-titulo">${titulo}</h2>
-  <p class="prod-precio">${precio}</p>
-  <a href="#" class="prod-enlace" id="${id}">Ver más</a>
-  `;
+  const contenido =   `<img class="receta__imagen" alt="${titulo}" src="${imagen}" />
+  <div class="receta__contenido">
+      <h4 class="receta__titulo">${titulo}</h4>
+      <p class="receta__descripcion">${precio}</p>
+      <button class="receta__boton" href="EnPreparacion.html" id="${id}">Ver descripción</button>`;
   div.innerHTML = contenido;
   return div;
 };
@@ -213,7 +215,7 @@ const listaUsuario = () => {
   listaTazas()
     .then((data) => {
       data.forEach((tazas) => {
-        const taza = crearListaTaza(taza.id,taza.name, taza.titulo, taza.imagen, taza.precio);
+        const taza = crearListaTazas(taza.id,taza.name, taza.titulo, taza.imagen, taza.precio);
         contSudaderas.appendChild(taza);
       });
     })
@@ -222,8 +224,8 @@ const listaUsuario = () => {
   listaBufandas()
   .then((data) => {
     data.forEach((bufandas) => {
-      const bufanda= crearListaBufanda(bufanda.id,bufanda.name, bufanda.titulo, bufanda.imagen,bufanda.precio);
-      contBufanda.appendChild(bufanda);
+      const bufanda= crearListaBufandas(bufanda.id,bufanda.name, bufanda.titulo, bufanda.imagen,bufanda.precio);
+      bufanda.appendChild(bufanda);
     });
   })
   .catch((error) => alert("Ocurrió un error"));
@@ -231,8 +233,8 @@ const listaUsuario = () => {
   listaBuzos()
   .then((data) => {
     data.forEach((buzos) => {
-      const buzo = crearListaBuzo(buzo.id,buzo.name, buzo.titulo, buzo.imagen, buzo.precio);
-      contBuzo.appendChild(buzo);
+      const buzo = crearListaBuzos(buzo.id,buzo.name, buzo.titulo, buzo.imagen, buzo.precio);
+      buzo.appendChild(buzo);
     });
   })
   .catch((error) => alert("Ocurrió un error"));
@@ -241,8 +243,8 @@ const listaUsuario = () => {
   listaGorros()
   .then((data) => {
     data.forEach((gorros) => {
-      const gorro= crearListaGorro(gorro.id,gorro.name, gorro.titulo, gorro.imagen, gorro.precio);
-      contGorro.appendChild(gorro);
+      const gorro= crearListaGorros(gorro.id,gorro.name, gorro.titulo, gorro.imagen, gorro.precio);
+      gorro.appendChild(gorro);
     });
   })
   .catch((error) => alert("Ocurrió un error"));
@@ -250,12 +252,11 @@ const listaUsuario = () => {
   listaSoportes()
   .then((data) => {
     data.forEach((soportes) => {
-      const soporte = crearListaSoporte(taza.id,taza.name, taza.titulo, taza.imagen, taza.precio);
-      contSoporte.appendChild(soporte);
+      const soporte = crearListaSoportes(soporte.id,soporte.name, soporte.titulo, soporte.imagen, soporte.precio);
+      soporte.appendChild(soporte);
     });
   })
   .catch((error) => alert("Ocurrió un error"));
   
   // console.log(data);
   //
-  
